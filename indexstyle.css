@@ -109,3 +109,7 @@
     margin-right: 50px;
     margin-left: 50px;
 }
+label{
+    display: inline-block;
+    width: 90px;
+}
