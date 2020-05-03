@@ -22,7 +22,7 @@
     width: 30%;
     margin-left: 0%;
     margin-right: 0%;
-    height: 70%;
+    height: 1300px;
     position: relative;
     float:left;
 }
@@ -87,7 +87,7 @@
     width: 70%;
     margin-left: 0%;
     margin-right: 0%;
-    height: 70%;
+    height: 1300px;
     position: relative;
     float:right;
     padding: 3%;
@@ -98,7 +98,7 @@
 #rodape{
     background-color:rgb(56, 55, 55);
     width: 100%;
-    margin-top: 702px;
+    margin-top: 1320px;
     height: 10%;
     clear: both;
     position: relative;
