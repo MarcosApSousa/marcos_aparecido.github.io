@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA 2K20</title>
-    <link href="indexstyle.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+href="indexstyle.css">
+    <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+img {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+</style>
+
 </head>
 <body>
-    <span id='topo'></span>
-    <div id="cabecalho">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">MJ</a>
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#minha_nav_bar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="minha_nav_bar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preco.html">Preços</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jogos</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="jogo1.html">JOGO 1</a>
+                            <a class="dropdown-item" href="jogo2.html">JOGO 2</a>
+                            <a class="dropdown-item" href="jogo3.html">JOGO 3</a>
+                            <div class="dropdown-divider"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastre.html">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
     <h1>NBA 2K20</h1>
-</div>
-<div id="lateral">
-    <p>Link para jogos</p>	
-    <div id="caixalateral1">
-<a href="jogo1.html"> Fifa 20</a><br>
-</div>
-<div id="caixalateral2">	
-<a href="jogo2.html"> NBA 2K20</a><br>
-</div>
-<div id="caixalateral3">	
-<a href="jogo3.html"> Forza Horizon 4</a><br>
-</div>
-</div>
-<div id="principal">
-    <a href="index.html"> Página Inicial</a><br>
     <h2>Sobre</h2>
     <p>MAIS REALISTA IMPOSSÍVEL</p>
     <p>Dê um salto em suas habilidades com o controle mais realista de todos os tempos, com uma engine de movimento melhorada e com estilos característicos, controles avançados de arremesso, um novo sistema de avaliação de drible, colisões sem a bola e uma nova jogabilidade defensiva, baseada em leitura e reação.</p>
@@ -34,21 +63,43 @@
     <p>Vivencie uma Neighborhood mais vibrante e ativa. Acesse ainda mais eventos de competição 2K, desbloqueie animações com o novo Show-Off Stick e ganhe mais equipamentos exclusivos do que nunca</p>
     <p>COLECIONE E DISPUTE</p>
     <p>Domine o MyTEAM com objetivos diários, níveis de cartas, um Triple Threat reimaginado, eventos por tempo limitado, e ainda mais prêmios. Aproveite uma experiência de usuário simplificada que será apreciada por veteranos e iniciantes, fique conectado à comunidade com códigos de desbloqueio, placares, dicas do desenvolvedor, time da semana e muito mais.</p>
-    <br>
+            </div>
+            <div class="col-md-5">
+                <img src="img/fig3.jpg" alt = "Capa do NBA 2K20" class="img-fluid"/>
+                <img src="img/fig4.jpg" alt = "Imagem do Fifa" class="img-fluid"/>
+                <img src="https://media.playstation.com/is/image/SCEA/nba-2k20-listingthumb-01-ps4-us-27june2019?$facebook$" alt = "NBA 2K20"class="img-fluid"/>
+            </div>
+        </div>
+    </div>        
     <h2>Onde Compra</h2>
-    <a href="https://www.lojapsngames.com.br/nba-2k20-ps4-midia-digital?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&sku=KVRQLM2GF-primaria&gclid=EAIaIQobChMIouPS0Oqu6AIVhBCRCh3W0ASAEAkYBSABEgLOM_D_BwE"> <img src="data:image/png;base64,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" height="100" width="100"/></a>
-    <a href="https://www.americanas.com.br/produto/360603171/jogo-game-nba-2k20-ps4-sony?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_gm_jogos_todas_geral_gmv&gclid=EAIaIQobChMIouPS0Oqu6AIVhBCRCh3W0ASAEAkYASABEgInUPD_BwE&i=5abc642ceec3dfb1f866b9fb&o=5d7d24af6c28a3cb50a657de&opn=YSMESP&sellerid=8809323000132&wt.srch=1"> <img src="https://images-americanas.b2w.io/zion/manifest/icons/1f3cb37c9be5fb0e9dd16b6ac97e213c.opengraph-image.png"height="100"width="100"/></a>
-    <a href="https://www.americanas.com.br/produto/1585963961/jogo-game-nba-2k20-ps4-sony?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_gm_jogos_todas_geral_gmv&gclid=EAIaIQobChMIouPS0Oqu6AIVhBCRCh3W0ASAEAkYAyABEgK1t_D_BwE&i=5e324c3949f937f625c3441d&o=5e760260f8e95eac3d93817f&opn=YSMESP&sellerid=30790557000134&wt.srch=1"> <img src="https://images-americanas.b2w.io/zion/manifest/icons/1f3cb37c9be5fb0e9dd16b6ac97e213c.opengraph-image.png"height="100"width="100"/></a>
-    <br><br> <img src="img/fig3.jpg" alt = "Capa do NBA 2K20"height ="200" width="400">
-    <br> <img src="img/fig4.jpg" alt = "Imagem do Fifa" height ="200" width="400"/>
-    <br> <img src="https://media.playstation.com/is/image/SCEA/nba-2k20-listingthumb-01-ps4-us-27june2019?$facebook$" alt = "NBA 2K20"height ="200" width="400">
-    <br><br>
-    <a href='#topo'>Voltar ao topo</a>
+   <div class="row mx-auto text-center">
+        <div class="col-md-4">
+            <a href="https://www.lojapsngames.com.br/nba-2k20-ps4-midia-digital?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&sku=KVRQLM2GF-primaria&gclid=EAIaIQobChMIouPS0Oqu6AIVhBCRCh3W0ASAEAkYBSABEgLOM_D_BwE"> <img src="data:image/png;base64,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" height="100" width="100"/></a>
+        </div>  
+        <div class="col-md-4">
+            <a href="https://www.americanas.com.br/produto/360603171/jogo-game-nba-2k20-ps4-sony?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_gm_jogos_todas_geral_gmv&gclid=EAIaIQobChMIouPS0Oqu6AIVhBCRCh3W0ASAEAkYASABEgInUPD_BwE&i=5abc642ceec3dfb1f866b9fb&o=5d7d24af6c28a3cb50a657de&opn=YSMESP&sellerid=8809323000132&wt.srch=1"> <img src="https://images-americanas.b2w.io/zion/manifest/icons/1f3cb37c9be5fb0e9dd16b6ac97e213c.opengraph-image.png"height="100"width="100"/></a>
+        </div>  
+        <div class="col-md-4">
+            <a href="https://www.americanas.com.br/produto/1585963961/jogo-game-nba-2k20-ps4-sony?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_gm_jogos_todas_geral_gmv&gclid=EAIaIQobChMIouPS0Oqu6AIVhBCRCh3W0ASAEAkYAyABEgK1t_D_BwE&i=5e324c3949f937f625c3441d&o=5e760260f8e95eac3d93817f&opn=YSMESP&sellerid=30790557000134&wt.srch=1"> <img src="https://images-americanas.b2w.io/zion/manifest/icons/1f3cb37c9be5fb0e9dd16b6ac97e213c.opengraph-image.png"height="100"width="100"/></a>
+     </div> 
+     
+    
     </div>
-    <div id="rodape">
-        <a href="cadastre.html"> &gt&gtCadraste-se</a>
-        <a href="faleconosco.html"> &gt&gtFale Conosco</a>
-        <a href="https://www.facebook.com/"> &gt&gtFacebook</a>
-    </div>
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="faleconosco.html">Fale Conosco</a>	
+            </div>
+            <div class="col-sm-4">
+                <h3>Conecte</h3>
+                
+            </div>
+            <div class="col-sm-4">
+                <h3>Contato</h3>
+                <h3>0800 0000 000</h3>
+    
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
