@@ -10,6 +10,42 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+
+function valida_email(){
+var usuario = document.getElementById("email").value.substring(0, document.getElementById("email").value.indexOf("@"));
+var dominio = document.getElementById("email").value.substring(document.getElementById("email").value.indexOf("@")+ 1, document.getElementById("email").value.length);
+if ((usuario.length >=1) &&
+    (dominio.length >=3) && 
+    (usuario.search("@")==-1) && 
+    (dominio.search("@")==-1) &&
+    (usuario.search(" ")==-1) && 
+    (dominio.search(" ")==-1) &&
+    (dominio.search(".")!=-1) &&      
+    (dominio.indexOf(".") >=1)&& 
+    (dominio.lastIndexOf(".") < dominio.length - 1)) {
+alert("Email está válido");
+}
+else{
+alert("E-mail está inválido");
+document.getElementById('email').value = "";
+}
+}
+
+function formata_telefone()
+{
+  
+var tel = document.getElementById("tel").value;
+  const parte1 = "("+tel.substring(0,2 )+")" ;
+  const parte2 = tel.substring(2,7);
+  const parte3 = "-"+tel.substring(7,11);
+  var total = parte1+parte2+parte3; 
+  document.getElementById("tel").value = total;
+
+}
+
+  
+    </script>
 </head>
 
 <body>
@@ -20,12 +56,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="minha_nav_bar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
+                <ul class="navbar-nav" >
+                    <li class="nav-item" >
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="preco.html">Preços</a>
+                    <li class="nav-item" >
+                        <a class="nav-link"  href="preco.html">Preços</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -36,8 +72,8 @@
                             <a class="dropdown-item" href="jogo3.html">JOGO 3</a>
                             <div class="dropdown-divider"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cadastre.html">Cadastre-se</a>
+                    <li class="nav-item" >
+                        <a class="nav-link"  href="cadastre.html">Cadastre-se</a>
                     </li>
                 </ul>
             </div>
@@ -85,11 +121,11 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="email">Email</label>
-                                    <input class="form-control" type="email" name="email" id="email">
+                                    <input class="form-control" type="email" onblur="valida_email()" name="email" id="email">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="tel">Telefone</label>
-                                    <input class="form-control" type="tel" name="tel" id="tel">
+                                    <input class="form-control" onblur="formata_telefone()" type="tel" name="tel" id="tel" >
                                 </div>
                             </div>
                             <div class="form-row">
